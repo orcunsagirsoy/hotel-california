@@ -35,6 +35,7 @@ $(document).ready(function(){
       alert("Success!");
     });
 
+//Gönder button functionality
     $("#gönderBtn").click(function(){
 
         var date = new Date();
@@ -56,14 +57,11 @@ $(document).ready(function(){
 
 // Initialize and add the map
 function initMap() {
-    // The location of Uluru
     const uluru = { lat: -25.344, lng: 131.036 };
-    // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("harita"), {
       zoom: 4,
       center: uluru,
     });
-    // The marker, positioned at Uluru
     const marker = new google.maps.Marker({
       position: uluru,
       map: map,

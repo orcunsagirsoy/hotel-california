@@ -1,7 +1,6 @@
-
 body{
   line-height: 1.6;
-  font-size: 1.2em;
+  font-size: 1vw;
   width: 100%;
   font-family: sans-serif;
 }
@@ -11,7 +10,7 @@ li {
    margin-left: 1rem;
    text-transform: uppercase;
    font-size: 1.7rem;
-   border: solid 1px red;
+  
 }
 
 li:hover{
@@ -19,20 +18,16 @@ li:hover{
   background-color: black;
   border-radius: 0.2em;
   width: 2em;
+  
 }
 
 ul {
    list-style-type: none;
-   margin: 0;
-   padding: 0;
    color: white;
-   border: solid 1px red;
+   margin-right: 2em;
+   font-size: 1vw;
  }
 
- nav{
-  border: solid 1px red;
-  background-color: rgb(37, 156, 156)
- }
 
  input{
     border: none;
@@ -41,22 +36,16 @@ ul {
     border-radius: 0.3rem;
  }
 
- /* label{
-    margin-top: 2em;
- } */
-
-
  /* ============ ANA SAYFA ==========*/
  #logoNavbar{
-    width: 20%;
-    /* border: solid 1px red; */
+    width: 15%;
+    margin-left: 2em;
  }
 #main-page{
    background-image: url('./images/mainpage-background.png');
    background-repeat: no-repeat;
    height: 45em;
    background-size: cover;
-   border: solid 1px red;
    padding: 20px 80px 0px 80px;
    display: flex;
    flex-direction: column;
@@ -65,7 +54,6 @@ ul {
 }
 
 #mainPageBtn{
-   border: solid 1px black;
    width: 15%;
    height: 4rem;
    background: rgb(253, 244, 226);
@@ -84,7 +72,6 @@ ul {
 }
 
 #textOnMainPage{
-   border: solid 1px red;
    color: white;
    font-size: 2em;
    text-align: center;
@@ -92,7 +79,6 @@ ul {
 }
 
 .center{
-   border: solid 1px blueviolet;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -101,7 +87,6 @@ ul {
    margin-top: 3em;
 }
 .centerHeader{
-   border: solid 1px black;
    display: flex;
    align-items: center;
    
@@ -112,10 +97,13 @@ ul {
 #logoNavContainer{
    display: flex;
    align-items: center;
-   /* border: solid 5px blueviolet; */
    justify-content: space-between;
-   width: 90%;
-  height: max-content;
+   height: max-content;
+   background-color: rgb(37, 156, 156);
+   z-index: 4;
+   top: 0;
+   left: 0;
+   position: sticky;
 }
 
 .underline{
@@ -129,42 +117,31 @@ ul {
 
 #otelimizHakkında{
    height: 40em;
-   /* border: solid 5px black; */
    background-color: rgb(230, 255, 255);
    padding: 40px 160px;
    position: relative;
+   z-index: -1;
    
 }
-/* #otelimizHakkındaInnerContainer{
-   width: 80%;
-   height: 80%;
-   border: solid 3px black;
-} */
 
 #otelimizHakkındaText{
-   /* border: solid 5px black; */
    width: 43%;
    font-size: 1.1rem;
    height: max-content;
+   font-size: 1vw;
 }
 
 #carImg{
-   /* border: solid 5px black; */
    width: 50%;
    bottom: -5.4rem;
    right: 0px;
    position: absolute;
+  
 }
-
-/* #carImg:hover{
-   transform: scale(1.1);
-   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-} */
 
 #otelimizHakkındaBody{
    margin-top: 3em;
    display:flex;
-   /* border: solid 5px red; */
    height: max-content;
    justify-content: space-between;
 }
@@ -174,19 +151,17 @@ ul {
 
 #aktiviteler{
    height: max-content;
-   border: solid 3px black;
    padding: 120px 200px 0px 200px;
    background-color: rgb(191, 134, 184);
+   
 }
 
 #aktivitelerHeaderText{
-   border: solid 1px black;
    width: 35%;
    text-align: center;
 }
 
 #aktivitelerBody{
-   border: solid 1px black;
    display: flex;
    flex-direction: row;
 }
@@ -194,7 +169,6 @@ ul {
 .aktivite{
    width: 25%;
    height: 30em;
-   border: solid 1px black;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -208,12 +182,10 @@ ul {
 }
 
 .aktivite > p{
-   border: solid 0.1em black;
    width: 80%;
 }
 
 #aktiviteFooter{
-   border: solid 0.2em black;
    height: 14em;
    position: relative;
    background-color: rgb(191, 134, 184);
@@ -233,7 +205,6 @@ ul {
 }
 
 #hangiMevsimdeHangiAktivite{
-   border: solid 0.1em black;
    height: max-content;
    background-color: rgb(230, 230, 230);
    padding: 120px 200px 0px 200px;
@@ -249,7 +220,6 @@ ul {
 .chart{
    width: 25%;
    height: 30em;
-   border: solid 1px black;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -476,50 +446,42 @@ ul {
  #ziyaretçiYorumları{
    background-color: rgb(255, 237, 204);
    height: max-content;
-   border: solid 3px black;
    padding: 120px 100px 0px 100px;
  }
 
  #yorumHeaderText{
-    border: solid 3px black;
     width: 55%;
    text-align: center;
    line-height: 1.6;
  }
 
  #yorumlarBody{
-   border: solid 3px black;
    height: max-content;
    width: 100%;
  }
 
  .yorum{
-   border: solid 1px black;
    width: 40%;
    display: flex;
  }
 
  .yorumText{
-   border: solid 1px black;
    width: 80%;
    line-height: 1.6;
    height: min-content;
  }
 
  .yorumRow{
-   border: solid 5px red;
    display: flex;
    justify-content: space-between;
    margin-top: 1.5rem;
  }
 
  .yorumTextName{
-   border: solid 2px red;
    margin-left: 1.5rem;
  }
 
  .userPicContainer{
-   border: solid 2px red;
    width: min-content;
    display: flex;
    justify-content: center;
@@ -527,7 +489,6 @@ ul {
  }
 
  #addCommentBtnContainer{
-   border: solid 6px red;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -555,7 +516,6 @@ ul {
  #iletişim{
     height: 35em;
     padding: 120px 160px 0px 160px;
-    border: solid 1px black;
     background-color: rgb(32, 160, 245);
  }
 
@@ -574,7 +534,7 @@ ul {
    cursor: pointer;
    height: 2rem;
    width: 90%;
-   margin-top: 2.1rem;
+   margin-top: 3.8rem;
  }
 
  #gönderBtn:hover {
@@ -614,13 +574,6 @@ ul {
     flex-direction: column;
   }
 
-  /* #socialLinks{
-    border: solid 2px black;
-  }
-
-  #address{
-    border: solid 2px black;
-  } */
 
   .fa {
     padding: 0.1em;
