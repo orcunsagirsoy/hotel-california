@@ -1,3 +1,654 @@
-.navbar{
-   border: solid 1px black;
+
+body{
+  line-height: 1.6;
+  font-size: 1.2em;
+  width: 100%;
+  font-family: sans-serif;
 }
+
+li {
+   display: inline;
+   margin-left: 1rem;
+   text-transform: uppercase;
+   font-size: 1.7rem;
+   border: solid 1px red;
+}
+
+li:hover{
+  cursor: pointer;
+  background-color: black;
+  border-radius: 0.2em;
+  width: 2em;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   color: white;
+   border: solid 1px red;
+ }
+
+ nav{
+  border: solid 1px red;
+  background-color: rgb(37, 156, 156)
+ }
+
+ input{
+    border: none;
+    width: 90%;
+    height: 2rem;
+    border-radius: 0.3rem;
+ }
+
+ /* label{
+    margin-top: 2em;
+ } */
+
+
+ /* ============ ANA SAYFA ==========*/
+ #logoNavbar{
+    width: 20%;
+    /* border: solid 1px red; */
+ }
+#main-page{
+   background-image: url('./images/mainpage-background.png');
+   background-repeat: no-repeat;
+   height: 45em;
+   background-size: cover;
+   border: solid 1px red;
+   padding: 20px 80px 0px 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+#mainPageBtn{
+   border: solid 1px black;
+   width: 15%;
+   height: 4rem;
+   background: rgb(253, 244, 226);
+   border: none;
+   border-radius: 0.3rem;
+   box-shadow: 0 4px 2px -0.5px rgb(255, 246, 227);
+   margin-top: 3rem;
+   text-transform: uppercase;
+}
+
+
+#mainPageBtn:hover {
+  background-color: rgb(156, 138, 124);
+  box-shadow: 0 2px 2px -0.5px rgb(135, 108, 88);
+  cursor: pointer;
+}
+
+#textOnMainPage{
+   border: solid 1px red;
+   color: white;
+   font-size: 2em;
+   text-align: center;
+   width: 80%;
+}
+
+.center{
+   border: solid 1px blueviolet;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 22em;
+   width: 90%;
+   margin-top: 3em;
+}
+.centerHeader{
+   border: solid 1px black;
+   display: flex;
+   align-items: center;
+   
+   flex-direction: column;
+   height: max-content;
+}
+
+#logoNavContainer{
+   display: flex;
+   align-items: center;
+   /* border: solid 5px blueviolet; */
+   justify-content: space-between;
+   width: 90%;
+  height: max-content;
+}
+
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  background: black;
+}
+
+
+/* ============ HAKKINDA ==========*/
+
+#otelimizHakkında{
+   height: 40em;
+   /* border: solid 5px black; */
+   background-color: rgb(230, 255, 255);
+   padding: 40px 160px;
+   position: relative;
+   
+}
+/* #otelimizHakkındaInnerContainer{
+   width: 80%;
+   height: 80%;
+   border: solid 3px black;
+} */
+
+#otelimizHakkındaText{
+   /* border: solid 5px black; */
+   width: 43%;
+   font-size: 1.1rem;
+   height: max-content;
+}
+
+#carImg{
+   /* border: solid 5px black; */
+   width: 50%;
+   bottom: -5.4rem;
+   right: 0px;
+   position: absolute;
+}
+
+/* #carImg:hover{
+   transform: scale(1.1);
+   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+} */
+
+#otelimizHakkındaBody{
+   margin-top: 3em;
+   display:flex;
+   /* border: solid 5px red; */
+   height: max-content;
+   justify-content: space-between;
+}
+
+
+/* ============ AKTİVİTELER ==========*/
+
+#aktiviteler{
+   height: max-content;
+   border: solid 3px black;
+   padding: 120px 200px 0px 200px;
+   background-color: rgb(191, 134, 184);
+}
+
+#aktivitelerHeaderText{
+   border: solid 1px black;
+   width: 35%;
+   text-align: center;
+}
+
+#aktivitelerBody{
+   border: solid 1px black;
+   display: flex;
+   flex-direction: row;
+}
+
+.aktivite{
+   width: 25%;
+   height: 30em;
+   border: solid 1px black;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.aktivite > img{
+   margin-top: 1rem;
+   border-radius: 50%;
+   border: solid 0.4em white;
+}
+
+.aktivite > p{
+   border: solid 0.1em black;
+   width: 80%;
+}
+
+#aktiviteFooter{
+   border: solid 0.2em black;
+   height: 14em;
+   position: relative;
+   background-color: rgb(191, 134, 184);
+}
+
+#actFooterText{
+   border-left: solid 0.8em rgb(179, 100, 147);
+   border-top: solid 0.8em rgb(179, 101, 148);
+   width: 60%;
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   padding: 1em 1em;
+   background-color: rgb(245, 176, 213);
+   line-height: 1.6;
+   font-size: 1.2em;
+}
+
+#hangiMevsimdeHangiAktivite{
+   border: solid 0.1em black;
+   height: max-content;
+   background-color: rgb(230, 230, 230);
+   padding: 120px 200px 0px 200px;
+}
+
+#aktivitelerHeader2Text {
+   width: 45%;
+   text-align: center;
+}
+
+
+/* ============ Charts ==========*/
+.chart{
+   width: 25%;
+   height: 30em;
+   border: solid 1px black;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+}
+
+.donut {
+   position: relative;
+   width: 200px;
+   height: 200px;
+ }
+ 
+ .donut-default {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+ }
+ 
+ .donut-white {
+   width: 70%;
+   height: 70%;
+   border-radius: 50%;
+   background: #fff;
+   top: 50%;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+ }
+ 
+ .donut-line {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ 
+ .donut-text {
+   top: 25px;
+   left: 25px;
+   width: 150px;
+   height: 150px;
+   background: #fff;
+   position: absolute;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 3;
+ }
+ 
+ .donut-text span {
+   color: #000000;
+   font-size: 3em;
+
+ }
+
+
+/* ============ installment 1 ==========*/
+.instalment1 .donut-case {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   
+   background: rgb(210, 210, 210);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-clip: border-box;
+   overflow: hidden;
+ }
+ 
+ .instalment1 .donut-case::before {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(180deg);
+   background: rgb(50, 186, 227);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .instalment1 .donut-case::after {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(327deg);
+   background: rgb(50, 186, 227);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ /* ============ installment 2 ==========*/
+.instalment2 .donut-case {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background: rgb(210, 210, 210);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-clip: border-box;
+   overflow: hidden;
+ }
+ 
+ .instalment2 .donut-case::before {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(180deg);
+   background: rgb(209, 77, 130);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .instalment2 .donut-case::after {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(270deg);
+   background: rgb(209, 77, 130);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ 
+  /* ============ installment 3 ==========*/
+.instalment3 .donut-case {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   
+   background: rgb(210, 210, 210);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-clip: border-box;
+   overflow: hidden;
+ }
+ 
+ .instalment3 .donut-case::before {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(180deg);
+   background: rgb(24, 196, 165);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .instalment3 .donut-case::after {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(252deg);
+   background: rgb(24, 196, 165);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+
+   /* ============ installment 4 ==========*/
+.instalment4 .donut-case {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   
+   background: rgb(210, 210, 210);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-clip: border-box;
+   overflow: hidden;
+ }
+ 
+ .instalment4 .donut-case::before {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(180deg);
+   background: rgb(227, 127, 84);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .instalment4 .donut-case::after {
+   content: "";
+   clip: rect(0 100px 200px 0);
+   -webkit-transform: rotate(327.6deg);
+   transform: rotate(306deg);
+   background: rgb(227, 127, 84);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+
+ /* ============ ZİYARETÇİ YORUMLARI ==========*/
+ #ziyaretçiYorumları{
+   background-color: rgb(255, 237, 204);
+   height: max-content;
+   border: solid 3px black;
+   padding: 120px 100px 0px 100px;
+ }
+
+ #yorumHeaderText{
+    border: solid 3px black;
+    width: 55%;
+   text-align: center;
+   line-height: 1.6;
+ }
+
+ #yorumlarBody{
+   border: solid 3px black;
+   height: max-content;
+   width: 100%;
+ }
+
+ .yorum{
+   border: solid 1px black;
+   width: 40%;
+   display: flex;
+ }
+
+ .yorumText{
+   border: solid 1px black;
+   width: 80%;
+   line-height: 1.6;
+   height: min-content;
+ }
+
+ .yorumRow{
+   border: solid 5px red;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 1.5rem;
+ }
+
+ .yorumTextName{
+   border: solid 2px red;
+   margin-left: 1.5rem;
+ }
+
+ .userPicContainer{
+   border: solid 2px red;
+   width: min-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #addCommentBtnContainer{
+   border: solid 6px red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 15em;
+ }
+
+ #addCommentBtn{
+   width: 15%;
+   height: 4rem;
+   background: rgb(140, 154, 171);
+   border: none;
+   border-radius: 0.3rem;
+   box-shadow: 0 4px 2px -0.5px rgb(62, 81, 105);
+   color: rgb(62, 81, 105);
+   cursor: pointer;
+ }
+
+ #addCommentBtn:hover {
+   background-color: rgb(193, 210, 231);
+   box-shadow: 0 2px 2px -0.5px rgb(62, 81, 105);
+ }
+
+
+ /* ============ İLETİŞİM ==========*/
+ #iletişim{
+    height: 35em;
+    padding: 120px 160px 0px 160px;
+    border: solid 1px black;
+    background-color: rgb(32, 160, 245);
+ }
+
+ #iletişimBody{
+   border: solid 3px red;
+   display: flex;
+   height: 20em;
+ }
+
+ #gönderBtn{
+   background: rgb(140, 154, 171);
+   border: none;
+   border-radius: 0.3rem;
+   box-shadow: 0 4px 2px -0.5px rgb(62, 81, 105);
+   color: rgb(62, 81, 105);
+   cursor: pointer;
+   height: 2rem;
+   width: 90%;
+   margin-top: 2.1rem;
+ }
+
+ #gönderBtn:hover {
+   background-color: rgb(193, 210, 231);
+   box-shadow: 0 2px 2px -0.5px rgb(62, 81, 105);
+ }
+
+ .formElement{
+   border: solid 2px black;
+   width: 33%;
+   height: 20em;
+   display: flex;
+   justify-content: center;
+   
+   flex-direction: column;
+   text-align: start;
+ }
+
+
+
+  /* ============ HARİTA ==========*/
+
+  #harita{
+    height: 45em;
+    width: 100%;
+  }
+
+  /* ============ FOOTER ==========*/
+
+  #footer{
+    height: 7em;
+    width: 100%;
+    background-color: rgb(209, 230, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* #socialLinks{
+    border: solid 2px black;
+  }
+
+  #address{
+    border: solid 2px black;
+  } */
+
+  .fa {
+    padding: 0.1em;
+    font-size: 3em;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.25em 0.1em;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-instagram{
+    color: #d62976;
+  }
+
+  .fa-twitter{
+    color: #00acee;
+  }
+
+  .fa-facebook{
+    color: #3b5998;
+  }
+
+  .fa-youtube{
+    color: #c4302b;
+  }
+
+  

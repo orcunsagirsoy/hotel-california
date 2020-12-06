@@ -4,20 +4,370 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Hotel California</title>
 		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="hotel.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGFVTDOZ7IGS0guTJeN0QZ7Dj10LBjwdQ&callback=initMap&libraries=&v=weekly"
+			defer
+		></script>
 	</head>
 	<body>
 		<div id="main-page">
-			<img id="logoNavbar" src="images/Logo.png">
-			<navbar>
-				<ul>
-					<li><a href="#anasayfa">ana sayfa</a></li>
-					<li><a href="#otelimiz">otelimiz</a></li>
-					<li><a href="#aktiviteler">aktiviteler</a></li>
-					<li><a href="#yorumlar">yorumlar</a></li>
-					<li><a href="#iletişim">iletişim</a></li>
-				</ul>
-			</navbar>
+			<div id="logoNavContainer">
+				<img id="logoNavbar" src="images/Logo.png">
+				<nav>
+					<ul>
+						<li onclick="window.location.href='#'">ANA SAYFA</li>
+						<li onclick="window.location.href='#otelimizHakkında'">OTELİMİZ</li>
+						<li onclick="window.location.href='#aktiviteler'">AKTİVİTELER</li>
+						<li onclick="window.location.href='#ziyaretçiYorumları'">YORUMLAR</li>
+						<li onclick="window.location.href='#iletişim'">İLETİŞİM</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="center">
+				<p id="textOnMainPage">Hey merhaba! Hayatındaki en muhteşem tatil deneyimini yaşamaya
+					ve gizemlerle dolu bu dünyaya girmeye ne dersin?
+				</p>
+				<button onclick="window.location.href='#otelimizHakkında'" id="mainPageBtn">otel hakkında</button>
+			</div>
+		</div>
+		<div id="otelimizHakkında">
+			<div id="otelimizHakkındaInnerContainer">
+			<div class="centerHeader">
+			<h1>OTELİMİZ HAKKINDA</h1>
+			<div class="underline"></div>
+			</div>
+			<div id='otelimizHakkındaBody'>
+			<article id="otelimizHakkındaText">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. 
+					In iaculis nunc sed augue lacus viverra vitae congue. 
+					Scelerisque in dictum non consectetur a. 
+				</p>
+				<br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. 
+					In iaculis nunc sed augue lacus viverra vitae congue. 
+				</p>
+				<br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt 
+				</p>
+				<br>
+				<p>
+					SİZ DEĞERLİ MİSAFİRLERİMİZİ BEKLİYORUZ
+				</p>
+			</article>
+			<div id='carImgContainer'>
+				<img id="carImg" src="images/pic.png" width="40%">
+			</div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div id="aktiviteler">
+			<div class="centerHeader">
+				<h1>AKTİVİTELER</h1>
+				<div class="underline"></div>
+				<p id="aktivitelerHeaderText">
+					Muteşem bir doğa manzarası, kuş sesleri ve çakıllı yollarla çevrili otelimizde
+					dağ ve dağ hayvanları ile yapılacak eşsiz aktiviteler.
+				</p>
+			</div>
+			
+			<div id="aktivitelerBody">
+				<div class="aktivite">
+					<img src="images/cont1pic.png">
+					<h3>DAĞ YÜRÜYÜŞÜ</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					</p>
+				</div>
+				<div class="aktivite">
+					<img src="images/cont2pic.png">
+					<h3>AVCILIK</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					</p>
+				</div>
+				<div class="aktivite">
+					<img src="images/cont3pic.png">
+					<h3>AYI TAKİBİ</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					</p>
+				</div>
+				<div class="aktivite">
+					<img src="images/cont4pic.png">
+					<h3>KUŞ GÖÇLERİ</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div id="aktiviteFooter">
+			<div id="actFooterText">
+				<p>
+					OTELİMİZ HANGİ DÖNEMLERDE AÇIK?<br>
+					Otelimiz yılın 365 günü siz değereli misafirlerimize hizmet vermekte olup, 
+					aktiviteler mevsimlere göre farklılıklar göstermektedir. Dağ yürüyüşü için genelde
+					bahar ayları tercih edilmekte olup, Avcılık sadece devletin belirlediği av dönemi
+					içerisinde yapılabilmektedir. Kuş göçlerinin zamanları ile ilgili detaylı bilgiye
+					otelimizi arayarak ulaşabilirsiniz.
+				</p>
+			</div>
+		</div>
+
+		<div id="hangiMevsimdeHangiAktivite">
+			<div class="centerHeader">
+				<h1>HANGİ MEVSİMDE HANGİ AKTİVİTE?</h1>
+				<div class="underline"></div>
+				<p id="aktivitelerHeader2Text">
+					Aşağıdaki tabloda 4 mevsimde hangi aktivitelerin hangi 
+					oranda yapılabileceğini bulabilirsiniz.
+				</p>
+			</div>
+			<div id="aktivitelerBody">
+				<div class="chart">
+					<div class="donut instalment1">
+						<div class="donut-default"></div>
+						<div class="donut-line"></div>
+						<div class="donut-text">
+						  <span>90%</span>
+						</div>
+						<div class="donut-case"></div>
+					</div>
+					<h3>DAĞ YÜRÜYÜŞÜ</h3>
+					<p>
+						4 Mevsim
+					</p>
+				</div>
+				<div class="chart">
+					<div class="donut instalment2">
+						<div class="donut-default"></div>
+						<div class="donut-line"></div>
+						<div class="donut-text">
+						  <span>75%</span>
+						</div>
+						<div class="donut-case"></div>
+					</div>
+					<h3>AVCILIK</h3>
+					<p>
+						Kış
+					</p>
+				</div>
+				<div class="chart">
+					<div class="donut instalment3">
+						<div class="donut-default"></div>
+						<div class="donut-line"></div>
+						<div class="donut-text">
+						  <span>70%</span>
+						</div>
+						<div class="donut-case"></div>
+					</div>
+					<h3>AYI TAKİBİ</h3>
+					<p>
+						İlkbahar - Yaz
+					</p>
+				</div>
+				<div class="chart">
+					<div class="donut instalment4">
+						<div class="donut-default"></div>
+						<div class="donut-line"></div>
+						<div class="donut-text">
+						  <span>85%</span>
+						</div>
+						<div class="donut-case"></div>
+					</div>
+					<h3>KUŞ GÖÇLERİ</h3>
+					<p>
+						Sonbahar - İlkbahar
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="ziyaretçiYorumları">
+			<div class="centerHeader">
+				<h1>ZİYARETÇİ YORUMLARI</h1>
+				<div class="underline"></div>
+				<p id="yorumHeaderText">
+					Aşağıda otelimizi ziyaret eden kıymetli misafirlerimizin yorumlarını bulabilirsiniz.
+				</p>
+			</div>
+
+
+			<div id="yorumlarBody">
+				<div class="yorumRow">
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer6.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Kışın zorlu şartlarda kaldığımız bu otelimizde
+								inanılmaz keyifli zamanlar geçirdik. Kış uykusuna
+								yatan ayıları mağarada izleme fırsatı yakaladık."
+							</p>
+						
+							<h3>EMILY GWENDSONN</h3>
+						</div>
+					</div>
+
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer8.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Geyikleri avlayamasak da onları takip etmek, onların hayatlarının
+								birer parçası olmak inanılmazdı. Otel rehberimiz Mr. Joe Biden'a
+								güzel yönlendirmeleri için teşekkür ederim."
+							</p>
+			
+							<h3>ROBERT JULIAN</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="yorumRow">
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer6.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Kışın zorlu şartlarda kaldığımız bu otelimizde
+								inanılmaz keyifli zamanlar geçirdik. Kış uykusuna
+								yatan ayıları mağarada izleme fırsatı yakaladık."
+							</p>
+						
+							<h3>EMILY GWENDSONN</h3>
+						</div>
+					</div>
+
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer8.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Geyikleri avlayamasak da onları takip etmek, onların hayatlarının
+								birer parçası olmak inanılmazdı. Otel rehberimiz Mr. Joe Biden'a
+								güzel yönlendirmeleri için teşekkür ederim."
+							</p>
+			
+							<h3>ROBERT JULIAN</h3>
+						</div>
+					</div>
+				</div>
+
+				<div id="#row" class="yorumRow">
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer6.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Kışın zorlu şartlarda kaldığımız bu otelimizde
+								inanılmaz keyifli zamanlar geçirdik. Kış uykusuna
+								yatan ayıları mağarada izleme fırsatı yakaladık."
+							</p>
+						
+							<h3>EMILY GWENDSONN</h3>
+						</div>
+					</div>
+
+					<div class="yorum">
+						<div class="userPicContainer">
+							<img class="userPic" src="images/Layer8.png">
+						</div>
+						<div class="yorumTextName">
+							<p class="yorumText">
+								"Geyikleri avlayamasak da onları takip etmek, onların hayatlarının
+								birer parçası olmak inanılmazdı. Otel rehberimiz Mr. Joe Biden'a
+								güzel yönlendirmeleri için teşekkür ederim."
+							</p>
+			
+							<h3>ROBERT JULIAN</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="addCommentBtnContainer">
+				<button id="addCommentBtn" onclick="appendText()">DİĞER YORUMLAR</button>
+			</div>
+		</div>
+
+
+		<div id="iletişim">
+			<div class="centerHeader">
+				<h1>İLETİŞİM</h1>
+				<div class="underline"></div>
+				<p id="yorumHeaderText">
+					Sizler de aşağıdaki formu doldurarak Hotel California'da tatil yapma fırsatını elde edebilirsiniz.
+				</p>
+			</div>
+
+			<div id="iletişimBody">
+				<div class="formElement">
+					<label for="fname"><b>AD SOYAD</b></label><br>
+					<input type="text" id="fname" placeholder="Ad-Soyad Giriniz..."><br>
+
+					<label for="date"><b>GİRİŞ TARİHİ</b></label><br>
+					<input type="date" id="arrivalDate"><br>
+				</div>
+				<div class="formElement">
+					<label for="email"><b>E-POSTA</b></label><br>
+					<input type="email" id="email" placeholder="E-Posta Adresi Giriniz..."><br>
+
+					<label for="date"><b>ÇIKIŞ TARİHİ</b></label><br>
+					<input type="date" id="leaveDate"><br>
+				</div>
+				<div class="formElement">
+					<label for="phone"><b>TELEFON</b></label><br>
+					<input type="text" id="phone" placeholder="Telefon Numarası Giriniz..."><br>
+
+					<button id="gönderBtn" >GÖNDER</button><br>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="harita">
+			<div id="map"></div>
+		</div>
+
+		<div id="footer">
+			<div id="address">
+				<p>Death Valley National Park - Harrisburg - California</p>
+			</div>
+			<div id="socialLinks">
+				<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook fa-2x"></a>
+				<a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter fa-2x"></a>
+				<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram fa-2x"></a>
+				<a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube fa-2x"></a>
+			</div>
 		</div>
 	</body>
 	</html>
